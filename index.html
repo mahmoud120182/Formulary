@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy Formulary List (الأدوية المتوفرة بالصيدلية)</title>
+    <meta name="description" content="Created By Dr. Mahmoud Hamdy." />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="1.svg" alt="Pharmacy Logo">
+        </div>
+        <div class="header-title">Formulary List</div>
+        <div class="logo right">
+            <img src="2.png" alt="Medicine Logo">
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="search-section">
+            <h2 class="search-title">Medication Search</h2>
+            <div class="search-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" id="search-input" placeholder="medication name or active ingredient">
+            </div>
+        </section>
+
+        <section class="results-container">
+            <h3 class="results-title"><i class="fas fa-list"></i> Search Results</h3>
+            <ul id="results-list" class="medication-list">
+                <div class="no-results">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Loading medications...</p>
+                </div>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>Created By Dr.Mahmoud Hamdy</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
