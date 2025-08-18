@@ -5,6 +5,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html {
+    scroll-padding-top: 100px; /* Prevent header overlap when scrolling */
+}
+
 body {
     background: linear-gradient(135deg, #1a2a6c, #b21f1f, #1a2a6c);
     background-size: 400% 400%;
@@ -24,6 +28,11 @@ body {
 .container {
     max-width: 800px;
     margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.container.keyboard-active {
+    transform: translateY(-100px);
 }
 
 /* Header Styles */
@@ -380,6 +389,20 @@ footer {
 }
 
 /* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding-top: 80px;
+    }
+    
+    .container.keyboard-active {
+        transform: translateY(-80px);
+    }
+    
+    .results-container {
+        max-height: calc(100vh - 250px);
+    }
+}
+
 @media (max-width: 600px) {
     .header-title {
         font-size: 1.2rem;
@@ -405,5 +428,9 @@ footer {
     
     .medication-name {
         font-size: 1.1rem;
+    }
+    
+    .results-container {
+        max-height: calc(100vh - 220px);
     }
 }
