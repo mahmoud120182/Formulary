@@ -3,6 +3,7 @@ let medications = []; // Will store loaded medications
 // DOM elements
 const searchInput = document.getElementById('search-input');
 const resultsList = document.getElementById('results-list');
+const container = document.querySelector('.container');
 
 // Function to display medications
 function displayMedications(meds) {
@@ -38,7 +39,10 @@ function displayMedications(meds) {
 
 // Function to filter medications and find those with same active ingredient
 function filterMedications(searchTerm) {
-    if (searchTerm.length < 2) {
+    // Trim and clean search term
+    const term = searchTerm.trim().toLowerCase();
+    
+    if (term.length < 2) {
         resultsList.innerHTML = `
             <div class="no-results">
                 <i class="fas fa-info-circle"></i>
@@ -47,8 +51,6 @@ function filterMedications(searchTerm) {
         `;
         return;
     }
-    
-    const term = searchTerm.toLowerCase();
     
     // Find medications that match the search term
     const directMatches = medications.filter(med => 
@@ -114,13 +116,37 @@ function loadMedicationData() {
     `;
 }
 
+// Prevent leading spaces
+function preventLeadingSpace(e) {
+    if (e.key === ' ' && searchInput.selectionStart === 0) {
+        e.preventDefault();
+    }
+}
+
+// Handle mobile keyboard appearance
+function handleMobileKeyboard() {
+    if (window.innerWidth < 768) {
+        searchInput.addEventListener('focus', () => {
+            container.classList.add('keyboard-active');
+            window.scrollTo(0, 0);
+        });
+        
+        searchInput.addEventListener('blur', () => {
+            container.classList.remove('keyboard-active');
+        });
+    }
+}
+
 // Event listeners
 searchInput.addEventListener('input', () => {
     filterMedications(searchInput.value);
 });
 
+searchInput.addEventListener('keydown', preventLeadingSpace);
+
 // Initialize
 loadMedicationData();
+handleMobileKeyboard();
 
 // Add a slight delay to the animation to let the page render first
 setTimeout(() => {
