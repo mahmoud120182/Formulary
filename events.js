@@ -12,13 +12,13 @@ function preventLeadingSpace(e) {
 function handleMobileKeyboard() {
     const searchInput = document.getElementById('search-input');
     const container = document.querySelector('.container');
-    
+
     if (window.innerWidth < 768) {
         searchInput.addEventListener('focus', () => {
             container.classList.add('keyboard-active');
             window.scrollTo(0, 0);
         });
-        
+
         searchInput.addEventListener('blur', () => {
             container.classList.remove('keyboard-active');
         });
@@ -28,13 +28,20 @@ function handleMobileKeyboard() {
 // Initialize event listeners
 function initEventListeners() {
     const searchInput = document.getElementById('search-input');
-    
+
     searchInput.addEventListener('input', () => {
         filterMedications(searchInput.value);
     });
-    
+
     searchInput.addEventListener('keydown', preventLeadingSpace);
-    
+
     // Add back button event listener
     document.getElementById('back-button').addEventListener('click', goBackToSearch);
+
+    // Handle browser back button
+    window.addEventListener('popstate', () => {
+        if (!document.getElementById('medication-detail').classList.contains('hidden')) {
+            goBackToSearch();
+        }
+    });
 }
