@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pharmacy Formulary List (الأدويةالنفسية المتوفرة بالصيدلية)</title>
+    <title>Pharmacy Formulary List (الأدوية المتوفرة بالصيدلية)</title>
     <meta name="description" content="Created By Dr. Mahmoud Hamdy." />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
@@ -38,13 +38,76 @@
                 </div>
             </ul>
         </section>
+
+        <!-- Medication Detail Page (initially hidden) -->
+        <section id="medication-detail" class="medication-detail hidden">
+            <div class="detail-header">
+                <button id="back-button" class="back-button">
+                    <i class="fas fa-arrow-left"></i> Back
+                </button>
+                <h2 id="detail-med-name" class="detail-title"></h2>
+            </div>
+            
+            <div class="detail-content">
+                <div class="detail-card">
+                    <h3><i class="fas fa-pills"></i> Medication Information</h3>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <span class="info-label">Active Ingredient:</span>
+                            <span id="detail-active" class="info-value"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Category:</span>
+                            <span id="detail-category" class="info-value"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Package:</span>
+                            <span id="detail-package" class="info-value"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Half-Life:</span>
+                            <span id="detail-half-life" class="info-value"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Availability:</span>
+                            <span id="detail-availability" class="info-value"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="detail-card">
+                    <h3><i class="fas fa-exclamation-triangle"></i> Side Effects</h3>
+                    <ul id="detail-side-effects" class="effect-list"></ul>
+                </div>
+                
+                <div class="detail-card">
+                    <h3><i class="fas fa-handshake"></i> Interactions</h3>
+                    <ul id="detail-interactions" class="effect-list"></ul>
+                </div>
+                
+                <div class="detail-card">
+                    <h3><i class="fas fa-chart-line"></i> Monitor</h3>
+                    <ul id="detail-monitor" class="effect-list"></ul>
+                </div>
+                
+                <div class="detail-card">
+                    <h3><i class="fas fa-flask"></i> Important Investigations</h3>
+                    <ul id="detail-investigations" class="effect-list"></ul>
+                </div>
+            </div>
+        </section>
     </div>
 
     <footer>
         <p>Created By Dr.Mahmoud Hamdy</p>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Load JavaScript modules -->
+    <script src="data.js"></script>
+    <script src="ui.js"></script>
+    <script src="search.js"></script>
+    <script src="events.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
