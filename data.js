@@ -1718,6 +1718,54 @@ const medicationData = [
         importantInvestigations: ["Monitor for EPS and akathisia. Dose-dependent EPS risk."]
     },
     { 
+        name: "RISPERDAL 2mg Tab.", 
+        active: "Risperidone", 
+        category: "Atypical Antipsychotic (Second Generation)",
+        available: true,
+        package: "20 TAB",
+        halfLife: "3-20 hours",
+        sideEffects: ["Extrapyramidal symptoms", "hyperprolactinemia", "weight gain", "sedation", "orthostatic hypotension"],
+        interactions: ["CNS depressants", "drugs that prolong QT interval", "levodopa (antagonizes effect)", "CYP2D6 inhibitors"],
+        monitor: ["Sedation", "EPS", "akathisia", "weight gain", "prolactin elevation symptoms"],
+        importantInvestigations: ["Monitor for EPS and akathisia. Dose-dependent EPS risk."]
+    },
+        { 
+        name: "RISPERDAL 4mg Tab.", 
+        active: "Risperidone", 
+        category: "Atypical Antipsychotic (Second Generation)",
+        available: true,
+        package: "20 TAB",
+        halfLife: "3-20 hours",
+        sideEffects: ["Extrapyramidal symptoms", "hyperprolactinemia", "weight gain", "sedation", "orthostatic hypotension"],
+        interactions: ["CNS depressants", "drugs that prolong QT interval", "levodopa (antagonizes effect)", "CYP2D6 inhibitors"],
+        monitor: ["Sedation", "EPS", "akathisia", "weight gain", "prolactin elevation symptoms"],
+        importantInvestigations: ["Monitor for EPS and akathisia. Dose-dependent EPS risk."]
+    },
+        { 
+        name: "RISPERDAL 1mg/ml Syrup.", 
+        active: "Risperidone", 
+        category: "Atypical Antipsychotic (Second Generation)",
+        available: true,
+        package: "30 ML",
+        halfLife: "3-20 hours",
+        sideEffects: ["Extrapyramidal symptoms", "hyperprolactinemia", "weight gain", "sedation", "orthostatic hypotension"],
+        interactions: ["CNS depressants", "drugs that prolong QT interval", "levodopa (antagonizes effect)", "CYP2D6 inhibitors"],
+        monitor: ["Sedation", "EPS", "akathisia", "weight gain", "prolactin elevation symptoms"],
+        importantInvestigations: ["Monitor for EPS and akathisia. Dose-dependent EPS risk."]
+    },
+        { 
+        name: "RISPERDAL CONSTA.", 
+        active: "Risperidone", 
+        category: "Atypical Antipsychotic (Second Generation)",
+        available: false,
+        package: "1 SYRING",
+        halfLife: "3-20 hours",
+        sideEffects: ["Extrapyramidal symptoms", "hyperprolactinemia", "weight gain", "sedation", "orthostatic hypotension"],
+        interactions: ["CNS depressants", "drugs that prolong QT interval", "levodopa (antagonizes effect)", "CYP2D6 inhibitors"],
+        monitor: ["Sedation", "EPS", "akathisia", "weight gain", "prolactin elevation symptoms"],
+        importantInvestigations: ["Monitor for EPS and akathisia. Dose-dependent EPS risk."]
+    },
+    { 
         name: "LUSTRAL 50mg Tab.", 
         active: "Sertraline", 
         category: "SSRI (Antidepressant)",
