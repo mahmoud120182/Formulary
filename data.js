@@ -806,6 +806,18 @@ const medicationData = [
         importantInvestigations: ["None routine for standard doses"]
     },
     { 
+        name: "CIPRALEX 10mg Tab.", 
+        active: "Escitalopram", 
+        category: "SSRI (Antidepressant)",
+        available: true,
+        package: "28 TAB",
+        halfLife: "27-32 hours",
+        sideEffects: ["Nausea", "insomnia", "somnolence", "increased sweating", "fatigue", "ejaculation disorder"],
+        interactions: ["MAOIs", "drugs that prolong QTc (e.g., Pimozide)", "Serotonergic drugs"],
+        monitor: ["Mood changes", "suicidal ideation", "QT prolongation (palpitations, dizziness)", "serotonin syndrome"],
+        importantInvestigations: ["None routine for standard doses"]
+    },
+    { 
         name: "PHILOZAC 20mg Cap.", 
         active: "Fluoxetine", 
         category: "SSRI (Antidepressant)",
@@ -2199,4 +2211,5 @@ function goBackToSearch() {
     document.getElementById('medication-detail').classList.add('hidden');
     document.querySelector('.search-section').classList.remove('hidden');
     document.querySelector('.results-container').classList.remove('hidden');
+
 }
