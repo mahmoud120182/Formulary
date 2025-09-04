@@ -158,7 +158,7 @@ const medicationData = [
         importantInvestigations: ["Prolactin level", "ECG (QTc interval)"]
     },
     { 
-        name: "TRYTPIZOL 10mg Tab.", 
+        name: "TRYPTIZOL 10mg Tab.", 
         active: "Amitriptyline", 
         category: "Tricyclic Antidepressant (TCA)",
         available: true,
@@ -170,7 +170,7 @@ const medicationData = [
         importantInvestigations: ["ECG (QTc interval at higher doses)", "baseline in cardiac disease"]
     },
     { 
-        name: "TRYTPIZOL 25mg Tab.", 
+        name: "TRYPTIZOL 25mg Tab.", 
         active: "Amitriptyline", 
         category: "Tricyclic Antidepressant (TCA)",
         available: true,
@@ -2213,3 +2213,4 @@ function goBackToSearch() {
     document.querySelector('.results-container').classList.remove('hidden');
 
 }
+
