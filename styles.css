@@ -559,6 +559,36 @@ header {
     border-bottom: none;
 }
 
+/* Dosing info styling */
+.dosing-info {
+    background-color: #f8f9fa;
+    border-left: 4px solid #4CAF50;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 4px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.dosing-info p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.dosing-info strong {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+/* Adjust spacing for the new section */
+.detail-card {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
 /* Utility classes */
 .hidden {
     display: none;

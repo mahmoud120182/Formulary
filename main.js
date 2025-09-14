@@ -61,6 +61,29 @@ function showMedicationDetails(medName) {
     availabilityEl.textContent = medication.available ? 'Available' : 'Not Available';
     availabilityEl.className = medication.available ? 'available-badge' : 'not-available-badge';
     
+    // Populate dosing information
+    const dosingInfo = getDosingInfo(medication.active);
+    const dosingEl = document.getElementById('detail-dosing');
+    dosingEl.innerHTML = '';
+
+    if (dosingInfo !== "Dosing information not available.") {
+        const [dosing, notes] = dosingInfo.split('\n\n');
+        
+        const dosingParagraph = document.createElement('p');
+        dosingParagraph.innerHTML = `<strong>Dosage:</strong> ${dosing}`;
+        dosingEl.appendChild(dosingParagraph);
+        
+        if (notes) {
+            const notesParagraph = document.createElement('p');
+            notesParagraph.innerHTML = `<strong>Notes:</strong> ${notes}`;
+            notesParagraph.style.marginTop = '10px';
+            notesParagraph.style.fontStyle = 'italic';
+            dosingEl.appendChild(notesParagraph);
+        }
+    } else {
+        dosingEl.textContent = dosingInfo;
+    }
+    
     // Populate side effects
     const sideEffectsList = document.getElementById('detail-side-effects');
     sideEffectsList.innerHTML = '';

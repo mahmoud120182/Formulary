@@ -75,39 +75,45 @@
                     </div>
                 </div>
                 
+                <!-- New Recommended Dosing Section -->
                 <div class="detail-card">
-                    <h3><i class="fas fa-exclamation-triangle"></i> Side Effects</h3>
-                    <ul id="detail-side-effects" class="effect-list"></ul>
+                    <h3><i class="fas fa-prescription"></i> Recommended Dosing</h3>
+                    <p id="detail-dosing" class="dosing-info"></p>
+                </div>
+                
+                <div class="detail-card">
+                    <h3><i class="fas fa-exclamation-triangle"style="color: red;"></i> Side Effects</h3>
+                    <ul id="detail-side-effects" class="detail-list"></ul>
                 </div>
                 
                 <div class="detail-card">
                     <h3><i class="fas fa-handshake"></i> Interactions</h3>
-                    <ul id="detail-interactions" class="effect-list"></ul>
+                    <ul id="detail-interactions" class="detail-list"></ul>
                 </div>
                 
                 <div class="detail-card">
-                    <h3><i class="fas fa-chart-line"></i> Monitor</h3>
-                    <ul id="detail-monitor" class="effect-list"></ul>
+                    <h3><i class="fas fa-clipboard-check"style="color: red;"></i> Monitor</h3>
+                    <ul id="detail-monitor" class="detail-list"></ul>
                 </div>
                 
                 <div class="detail-card">
                     <h3><i class="fas fa-flask"></i> Important Investigations</h3>
-                    <ul id="detail-investigations" class="effect-list"></ul>
+                    <ul id="detail-investigations" class="detail-list"></ul>
                 </div>
             </div>
         </section>
     </div>
 
     <footer>
-        <p>Created By Dr.Mahmoud Hamdy</p>
+        <p>Created By Dr. Mahmoud Hamdy</p>
     </footer>
 
-    <!-- Load JavaScript modules -->
     <script src="data.js"></script>
-    <script src="ui.js"></script>
+    <script src="events.js"></script>  <!-- Add this before main.js -->
     <script src="search.js"></script>
-    <script src="events.js"></script>
+    <script src="ui.js"></script>
     <script src="main.js"></script>
+
 </body>
 
 </html>

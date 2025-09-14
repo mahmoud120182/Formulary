@@ -158,7 +158,7 @@ const medicationData = [
         importantInvestigations: ["Prolactin level", "ECG (QTc interval)"]
     },
     { 
-        name: "TRYPTIZOL 10mg Tab.", 
+        name: "TRYTPIZOL 10mg Tab.", 
         active: "Amitriptyline", 
         category: "Tricyclic Antidepressant (TCA)",
         available: true,
@@ -170,7 +170,7 @@ const medicationData = [
         importantInvestigations: ["ECG (QTc interval at higher doses)", "baseline in cardiac disease"]
     },
     { 
-        name: "TRYPTIZOL 25mg Tab.", 
+        name: "TRYTPIZOL 25mg Tab.", 
         active: "Amitriptyline", 
         category: "Tricyclic Antidepressant (TCA)",
         available: true,
@@ -845,7 +845,7 @@ const medicationData = [
         name: "DEPREBAN 20mg Cap.", 
         active: "Fluoxetine", 
         category: "SSRI (Antidepressant)",
-        available: true,
+        available: false,
         package: "10 cap",
         halfLife: "1-3 days",
         sideEffects: ["Nausea", "headache", "insomnia", "anxiety", "nervousness", "sexual dysfunction", "fatigue"],
@@ -1613,6 +1613,18 @@ const medicationData = [
         name: "QUITCOOL 400 XR Tab.", 
         active: "Quetiapine", 
         category: "Atypical Antipsychotic (Second Generation)",
+        available: false,
+        package: "30 TAB",
+        halfLife: "6 hours",
+        sideEffects: ["Sedation", "dry mouth", "dizziness", "weight gain", "constipation", "orthostatic hypotension"],
+        interactions: ["CNS depressants", "CYP3A4 inhibitors/inducers (e.g., ketoconazole, carbamazepine)", "antihypertensives"],
+        monitor: ["Sedation", "orthostatic hypotension", "weight gain", "metabolic changes", "cataracts (long-term)"],
+        importantInvestigations: ["Do not crush or chew. Monitor weight, blood glucose, lipids. Higher QTc risk than IR."]
+    },
+    { 
+        name: "QUITAPEX 400 XR Tab.", 
+        active: "Quetiapine", 
+        category: "Atypical Antipsychotic (Second Generation)",
         available: true,
         package: "30 TAB",
         halfLife: "6 hours",
@@ -2128,6 +2140,253 @@ const medicationData = [
     }
 ];
 
+const dosingData = {
+    "Agomelatine": {
+        dosing: "25 mg once daily at bedtime.",
+        notes: "Major Depressive Disorder. Requires normal liver function tests."
+    },
+    "Alprazolam": {
+        dosing: "Anxiety: 0.25–0.5 mg three times per day. Panic: Up to 1–10 mg per day in divided doses.",
+        notes: "Titrate slowly. Avoid abrupt discontinuation. Risk of dependence."
+    },
+    "Amantadine": {
+        dosing: "Parkinson's: 100 mg two times per day. Viral: 200 mg once daily or 100 mg two times per day.",
+        notes: "Dose adjustment required in renal impairment."
+    },
+    "Amisulpride": {
+        dosing: "Schizophrenia: 400–800 mg per day in 1-2 doses. Dysthymia: 50 mg per day.",
+        notes: "Lower doses for negative symptoms, higher for positive psychotic symptoms."
+    },
+    "Amitriptyline": {
+        dosing: "Depression: 25–150 mg per day as a single dose at bedtime. Neuropathic pain: 10–100 mg per day.",
+        notes: "Start low to minimize side effects like dry mouth and sedation."
+    },
+    "Aripiprazole": {
+        dosing: "Oral: 10–15 mg once daily. IM depot (Maintena): 300–400 mg monthly.",
+        notes: "Dose varies by indication (depression, bipolar, schizophrenia)."
+    },
+    "Armodafinil": {
+        dosing: "150–250 mg once daily in the morning.",
+        notes: "Narcolepsy, Obstructive Sleep Apnea, Shift Work Sleep Disorder."
+    },
+    "Asenapine": {
+        dosing: "5–10 mg sublingually two times per day.",
+        notes: "Administer under the tongue only. Do not eat or drink for 10 minutes after dose."
+    },
+    "Atomoxetine": {
+        dosing: "40–100 mg per day as a single daily dose or divided two times per day.",
+        notes: "ADHD. Start at 40 mg, increase after a minimum of 3 days."
+    },
+    "Benztropine": {
+        dosing: "1–4 mg by mouth daily or two times per day.",
+        notes: "For drug-induced movement side effects (EPS)."
+    },
+    "Biperidene": {
+        dosing: "2 mg by mouth three times per day or four times per day. Maximum 16 mg per day.",
+        notes: "For Parkinsonism and drug-induced movement side effects."
+    },
+    "Brexpiprazole": {
+        dosing: "1–4 mg once daily.",
+        notes: "Major Depressive Disorder (adjunct), Schizophrenia. Start at 0.5-1 mg."
+    },
+    "Bupropion": {
+        dosing: "Sustained-Release: 150 mg two times per day. Extended-Release: 150–300 mg once daily.",
+        notes: "Depression, Smoking Cessation. Avoid high doses due to seizure risk."
+    },
+    "Carbidopa/Levodopa": {
+        dosing: "1 tablet three times per day or four times per day. Start with 25/100 mg.",
+        notes: "Titrated very slowly to effect. Dosing is highly individualized."
+    },
+    "Cariprazine": {
+        dosing: "1.5–6 mg once daily.",
+        notes: "Schizophrenia, Bipolar Depression. Start at 1.5 mg."
+    },
+    "Chlordiazepoxide": {
+        dosing: "Mild anxiety: 5–10 mg three or four times per day. Severe anxiety: 20–25 mg three or four times per day.",
+        notes: "Risk of dependence. Taper to discontinue."
+    },
+    "Chlorpromazine": {
+        dosing: "Psychosis: 30–800 mg per day in divided doses.",
+        notes: "A low-potency typical antipsychotic."
+    },
+    "Citalopram": {
+        dosing: "20–40 mg once daily. Maximum 40 mg per day.",
+        notes: "Depression. Doses over 40 mg not recommended due to heart risk."
+    },
+    "Clomipramine": {
+        dosing: "25 mg daily, gradually increased to 100–250 mg per day in divided doses.",
+        notes: "OCD, Depression."
+    },
+    "Clonazepam": {
+        dosing: "Seizures: 0.5–20 mg per day. Panic: 0.25–4 mg per day.",
+        notes: "Titrate gradually. Risk of dependence."
+    },
+    "Clozapine": {
+        dosing: "12.5–900 mg per day in divided doses.",
+        notes: "Treatment-Resistant Schizophrenia. Requires strict blood monitoring. Titrate slowly."
+    },
+    "Desvenlafaxine": {
+        dosing: "50 mg once daily.",
+        notes: "Major Depressive Disorder. Can be increased to 100 mg per day."
+    },
+    "Divalproex": {
+        dosing: "Start 250–500 mg two times per day. Titrate to 1000–3000 mg per day.",
+        notes: "Mood stabilization, seizures. Dose adjusted by serum levels."
+    },
+    "Donepezil": {
+        dosing: "5–10 mg once daily at bedtime.",
+        notes: "Alzheimer's Disease. Start at 5 mg for 4-6 weeks, then increase to 10 mg."
+    },
+    "Duloxetine": {
+        dosing: "20–60 mg once daily.",
+        notes: "Depression, Neuropathic Pain, Generalized Anxiety Disorder."
+    },
+    "Escitalopram": {
+        dosing: "10–20 mg once daily.",
+        notes: "Major Depressive Disorder, Generalized Anxiety Disorder."
+    },
+    "Fluoxetine": {
+        dosing: "20–80 mg once daily in the morning.",
+        notes: "Depression, OCD, Bulimia. Long half-life."
+    },
+    "Flupentixol": {
+        dosing: "Oral: 3–9 mg two times per day. Depot IM: 20–40 mg every 2-4 weeks.",
+        notes: "Schizophrenia."
+    },
+    "Fluvoxamine": {
+        dosing: "50–300 mg per day. Start 50 mg at bedtime, increase by 50 mg every 4-7 days.",
+        notes: "OCD, Social Anxiety Disorder, Depression."
+    },
+    "Gabapentin": {
+        dosing: "300–3600 mg per day in 3 divided doses. Start 300 mg three times per day.",
+        notes: "Neuropathic Pain, Seizures. Dose requires renal adjustment."
+    },
+    "Haloperidol": {
+        dosing: "Oral: 1–15 mg per day in 2-3 divided doses. IM (acute): 2–5 mg. Depot: 50-200 mg monthly.",
+        notes: "Psychosis, agitation. A high-potency typical antipsychotic."
+    },
+    "Lamotrigine": {
+        dosing: "Bipolar: 50–200 mg per day. Epilepsy: 100–500 mg per day.",
+        notes: "Must be titrated very slowly to minimize risk of serious rash."
+    },
+    "Lithium": {
+        dosing: "600–1800 mg per day in divided doses.",
+        notes: "Bipolar Disorder. Dosing is guided by serum levels."
+    },
+    "Lurasidone": {
+        dosing: "20–80 mg once daily with food (at least 350 calories).",
+        notes: "Schizophrenia, Bipolar Depression."
+    },
+    "Melatonin": {
+        dosing: "1–10 mg 30-60 minutes before bedtime.",
+        notes: "Insomnia. Dosing is not standardized."
+    },
+    "Memantine": {
+        dosing: "Start 5 mg daily, titrate to 10 mg two times per day. Titrate weekly.",
+        notes: "Alzheimer's Disease."
+    },
+    "Midazolam": {
+        dosing: "Dose is highly individualized based on route and procedure.",
+        notes: "Preoperative sedation, status epilepticus. For clinical use only."
+    },
+    "Mirtazapine": {
+        dosing: "15–45 mg once daily at bedtime.",
+        notes: "Depression. Lower doses are more sedating."
+    },
+    "Modafinil": {
+        dosing: "100–400 mg once daily in the morning.",
+        notes: "Narcolepsy, Shift Work Disorder."
+    },
+    "Naltrexone": {
+        dosing: "Alcohol Use Disorder: 50 mg once daily. Opioid Use Disorder: 50 mg daily or 100 mg on Monday/Wednesday/Friday.",
+        notes: "Patient must be opioid-free for 7-10 days prior to initiation."
+    },
+    "Olanzapine": {
+        dosing: "5–20 mg once daily.",
+        notes: "Schizophrenia, Bipolar Disorder."
+    },
+    "Oxcarbazepine": {
+        dosing: "600–2400 mg per day in 2 divided doses.",
+        notes: "Seizures. Start at 300 mg two times per day. Monitor sodium levels."
+    },
+    "Paliperidone": {
+        dosing: "Oral: 3–12 mg once daily. IM (Sustenna): 39–234 mg monthly.",
+        notes: "Schizophrenia."
+    },
+    "Paroxetine": {
+        dosing: "20–50 mg once daily, usually in the morning.",
+        notes: "Depression, Anxiety Disorders."
+    },
+    "Phenytoin": {
+        dosing: "Loading dose: 15-20 mg/kg. Maintenance: 300-400 mg per day in 1-3 divided doses.",
+        notes: "Seizures. Dosing is guided by serum levels."
+    },
+    "Piracetam": {
+        dosing: "1200–4800 mg per day in 2-3 divided doses.",
+        notes: "Myoclonus (used off-label for cognition)."
+    },
+    "Pramipexole": {
+        dosing: "Parkinson's: 1.5–4.5 mg per day in 3 divided doses. RLS: 0.125–0.75 mg once daily 2-3 hrs before bed.",
+        notes: "Titrate slowly over several weeks."
+    },
+    "Quetiapine": {
+        dosing: "Schizophrenia: 150–750 mg per day. Bipolar Depression: 300 mg daily. Depression (adjunct): 150-300 mg daily.",
+        notes: "Dosing varies widely by indication."
+    },
+    "Risperidone": {
+        dosing: "2–8 mg per day in 1-2 doses.",
+        notes: "Schizophrenia. IM (Consta): 25-50 mg every 2 weeks."
+    },
+    "Sertraline": {
+        dosing: "50–200 mg once daily.",
+        notes: "Depression, OCD, Panic Disorder. Start at 25-50 mg."
+    },
+    "Sulpiride": {
+        dosing: "200–800 mg per day in 2 divided doses.",
+        notes: "Schizophrenia (not available in the US)."
+    },
+    "Topiramate": {
+        dosing: "Migraine: 50–100 mg per day in 2 doses. Epilepsy: 200–400 mg per day in 2 doses.",
+        notes: "Titrate slowly."
+    },
+    "Trazodone": {
+        dosing: "Depression: 150–400 mg per day in divided doses. Insomnia: 25–100 mg at bedtime.",
+        notes: "Sedation is common."
+    },
+    "Trifluoperazine": {
+        dosing: "2–20 mg per day in divided doses.",
+        notes: "Schizophrenia. A high-potency typical antipsychotic."
+    },
+    "Valproic Acid": {
+        dosing: "Start 250–500 mg two times per day. Titrate to 1000–3000 mg per day.",
+        notes: "Mood stabilization, seizures. Dose adjusted by serum levels."
+    },
+    "Venlafaxine": {
+        dosing: "Extended-Release: 75–225 mg once daily.",
+        notes: "Depression, Anxiety. Start at 37.5-75 mg."
+    },
+    "Vilazodone": {
+        dosing: "40 mg once daily with food.",
+        notes: "Major Depressive Disorder. Start at 10 mg for 7 days, then 20 mg for 7 days, then 40 mg."
+    },
+    "Vortioxetine": {
+        dosing: "5–20 mg once daily.",
+        notes: "Major Depressive Disorder. Start at 10 mg."
+    },
+    "Zopiclone": {
+        dosing: "3.75–7.5 mg immediately before bedtime.",
+        notes: "Insomnia. Short-term use recommended."
+    },
+    "Zuclopenthixol": {
+        dosing: "Oral: 20–50 mg per day. Depot IM: 200–500 mg every 2-4 weeks.",
+        notes: "Schizophrenia."
+    },
+    "Carbamazepine": {
+        dosing: "200–1200 mg per day in 2-4 divided doses.",
+        notes: "Seizures, Trigeminal Neuralgia, Bipolar Disorder. Dosing is guided by serum levels. Requires slow titration."
+    }
+};
+
 let medications = []; // Will store loaded medications
 
 // Function to load medication data
@@ -2146,6 +2405,14 @@ function loadMedicationData() {
             <p style="font-size:0.9rem; margin-top:10px;">Try: olanzapine, lithium</p>
         </div>
     `;
+}
+
+// Function to get dosing information for an active ingredient
+function getDosingInfo(activeIngredient) {
+    const info = dosingData[activeIngredient];
+    if (!info) return "Dosing information not available.";
+    
+    return `${info.dosing}\n\n${info.notes}`;
 }
 
 // Function to show medication details
@@ -2168,6 +2435,29 @@ function showMedicationDetails(medName) {
     const availabilityEl = document.getElementById('detail-availability');
     availabilityEl.textContent = medication.available ? 'Available' : 'Not Available';
     availabilityEl.className = medication.available ? 'available-badge' : 'not-available-badge';
+    
+    // Populate dosing information
+    const dosingInfo = getDosingInfo(medication.active);
+    const dosingEl = document.getElementById('detail-dosing');
+    dosingEl.innerHTML = '';
+
+    if (dosingInfo !== "Dosing information not available.") {
+        const [dosing, notes] = dosingInfo.split('\n\n');
+        
+        const dosingParagraph = document.createElement('p');
+        dosingParagraph.innerHTML = `<strong>Dosage:</strong> ${dosing}`;
+        dosingEl.appendChild(dosingParagraph);
+        
+        if (notes) {
+            const notesParagraph = document.createElement('p');
+            notesParagraph.innerHTML = `<strong>Notes:</strong> ${notes}`;
+            notesParagraph.style.marginTop = '10px';
+            notesParagraph.style.fontStyle = 'italic';
+            dosingEl.appendChild(notesParagraph);
+        }
+    } else {
+        dosingEl.textContent = dosingInfo;
+    }
     
     // Populate side effects
     const sideEffectsList = document.getElementById('detail-side-effects');
@@ -2211,6 +2501,4 @@ function goBackToSearch() {
     document.getElementById('medication-detail').classList.add('hidden');
     document.querySelector('.search-section').classList.remove('hidden');
     document.querySelector('.results-container').classList.remove('hidden');
-
 }
-
