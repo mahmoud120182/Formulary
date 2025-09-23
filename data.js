@@ -1465,6 +1465,18 @@ const medicationData = [
         monitor: ["Nystagmus", "ataxia", "gingival hyperplasia", "rash", "coarsening of facial features"],
         importantInvestigations: ["Therapeutic drug monitoring required. Highly protein-bound."]
     },
+{
+    name: "ORAP FORTE 4mg Tab.",
+    active: "Pimozide",
+    category: "Typical Antipsychotic (First Generation, Diphenylbutylpiperidine)",
+    available: true,
+    package: "20 TAB",
+    halfLife: "50–60 hours",
+    sideEffects: ["Sedation", "extrapyramidal symptoms (EPS)", "QTc prolongation", "weight gain", "dry mouth", "constipation"],
+    interactions: ["CYP3A4 inhibitors (e.g., ketoconazole, erythromycin)", "CYP1A2 inhibitors", "other QTc-prolonging drugs (e.g., amiodarone, citalopram)", "CNS depressants"],
+    monitor: ["QTc interval", "EPS", "sedation", "signs of infection (agranulocytosis)", "cardiac symptoms (palpitations, syncope)"],
+    importantInvestigations: ["ECG (QTc interval) – baseline and periodically", "CBC (rare agranulocytosis)"]
+},
     { 
         name: "STIMULAN 400mg Cap.", 
         active: "Piracetam", 
@@ -2321,6 +2333,11 @@ const dosingData = {
         dosing: "Loading dose: 15-20 mg/kg. Maintenance: 300-400 mg per day in 1-3 divided doses.",
         notes: "Seizures. Dosing is guided by serum levels."
     },
+"Pimozide": {
+    dosing: "Initial: 1-2 mg per day. Maximum: 10 mg per day (rarely up to 20 mg for refractory Tourette's).",
+    notes: "Tourette's syndrome, refractory psychosis. ECG monitoring required due to QTc prolongation risk."
+},
+
     "Piracetam": {
         dosing: "1200–4800 mg per day in 2-3 divided doses.",
         notes: "Myoclonus (used off-label for cognition)."
