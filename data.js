@@ -817,6 +817,18 @@ const medicationData = [
         monitor: ["Mood changes", "suicidal ideation", "QT prolongation (palpitations, dizziness)", "serotonin syndrome"],
         importantInvestigations: ["None routine for standard doses"]
     },
+    {
+        name: "ANEXATE 0.5mg/5ml Amp.",
+        active: "Flumazenil",
+        category: "Benzodiazepine Antagonist (Antidote)",
+        available: true,
+        package: "5 amp",
+        halfLife: "Terminal half-life is 40 to 80 minutes (Initial distribution half-life: 4 to 11 minutes)",
+        sideEffects: ["Nausea", "vomiting", "dizziness", "increased sweating", "headache", "agitation/anxiety", "pain at injection site", "seizures (especially in physically dependent patients or mixed overdose)"],
+        interactions: ["Benzodiazepines (reverses effect)", "Cyclic Antidepressants (Increased risk of seizures and arrhythmias, use is generally contraindicated in suspected overdose)", "Other drugs that can cause seizures or arrhythmias (e.g., chloral hydrate, carbamazepine)"],
+        monitor: ["Resedation and recurrence of respiratory depression (due to Flumazenil's shorter half-life compared to many benzodiazepines)", "Level of consciousness/sedation (e.g., Glasgow Coma Scale)", "Vital signs (especially respiratory rate, blood pressure, and heart rate)", "Signs of precipitated benzodiazepine withdrawal/seizures"],
+        importantInvestigations: ["Close monitoring until risk of resedation has passed (typically 1-2 hours, or longer for large benzodiazepine doses)", "ECG (to rule out QRS prolongation from co-ingested tricyclic antidepressants before use in overdose)"]
+    },
     { 
         name: "PHILOZAC 20mg Cap.", 
         active: "Fluoxetine", 
@@ -2256,6 +2268,10 @@ const dosingData = {
     "Escitalopram": {
         dosing: "10–20 mg once daily.",
         notes: "Major Depressive Disorder, Generalized Anxiety Disorder."
+    },
+    "Flumazenil": {
+       dosing: "Varies by indication, administered IV. **Reversal of Sedation (Adult):** Initial dose 0.2 mg over 15 seconds. May repeat 0.2 mg at 60-second intervals up to a maximum total dose of 1 mg. **Suspected Overdose (Adult):** Initial dose 0.2 mg over 30 seconds. If no response after 30 seconds, administer 0.3 mg. If no response, subsequent doses of 0.5 mg at 1-minute intervals up to a maximum total cumulative dose of 3 mg.",
+       notes: "Benzodiazepine Antagonist. Used to reverse sedation from benzodiazepines. Its short half-life (40-80 min) often leads to **resedation**, requiring repeat dosing or a continuous IV infusion. Use is **contraindicated** in patients with suspected serious tricyclic antidepressant overdose, or in those relying on benzodiazepines to control a life-threatening condition (e.g., status epilepticus) due to the risk of precipitating seizures."
     },
     "Fluoxetine": {
         dosing: "20–80 mg once daily in the morning.",
