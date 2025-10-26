@@ -713,7 +713,7 @@ const medicationData = [
         name: "DIVAKOTE 500mg ER Tab.", 
         active: "Divalproex", 
         category: "Anticonvulsant (Mood Stabilizer)",
-        available: true,
+        available: false,
         package: "20 tab",
         halfLife: "9-16 hours",
         sideEffects: ["Nausea", "sedation", "tremor", "weight gain", "hair loss", "thrombocytopenia", "liver toxicity"],
@@ -1226,6 +1226,18 @@ const medicationData = [
         importantInvestigations: ["Monitor weight, blood glucose, and lipids regularly."]
     },
     { 
+        name: "OLANVEXA 10mg disintegrating Tab.", 
+        active: "Olanzapine", 
+        category: "Atypical Antipsychotic (Second Generation)",
+        available: true,
+        package: "30 TAB",
+        halfLife: "21-54 hours",
+        sideEffects: ["Weight gain", "sedation", "hyperlipidemia", "hyperglycemia", "dizziness"],
+        interactions: ["CNS depressants", "antihypertensives (risk of hypotension)", "CYP1A2 inhibitors (e.g., fluvoxamine)"],
+        monitor: ["Sedation", "weight gain", "EPS", "metabolic changes", "orthostatic hypotension"],
+        importantInvestigations: ["Monitor weight, blood glucose, and lipids regularly."]
+    },
+    { 
         name: "ZYPREXA Tab.", 
         active: "Olanzapine", 
         category: "Atypical Antipsychotic (Second Generation)",
@@ -1670,10 +1682,22 @@ const medicationData = [
         importantInvestigations: ["Do not crush or chew. Monitor weight, blood glucose, lipids. Higher QTc risk than IR."]
     },
     { 
-        name: "SEROQUEL 100mg Tab.", 
+        name: "QUETIAPINE 100mg Tab.", 
         active: "Quetiapine", 
         category: "Atypical Antipsychotic (Second Generation)",
         available: true,
+        package: "30 TAB",
+        halfLife: "6 hours",
+        sideEffects: ["Sedation", "dry mouth", "dizziness", "weight gain", "constipation", "orthostatic hypotension"],
+        interactions: ["CNS depressants", "CYP3A4 inhibitors/inducers (e.g., ketoconazole, carbamazepine)", "antihypertensives"],
+        monitor: ["Sedation", "orthostatic hypotension", "weight gain", "metabolic changes", "cataracts (long-term)"],
+        importantInvestigations: ["Monitor weight, blood glucose, lipids, and blood pressure. Risk of cataract (monitor eye exams)."]
+    },
+    { 
+        name: "SEROQUEL 100mg Tab.", 
+        active: "Quetiapine", 
+        category: "Atypical Antipsychotic (Second Generation)",
+        available: false,
         package: "30 TAB",
         halfLife: "6 hours",
         sideEffects: ["Sedation", "dry mouth", "dizziness", "weight gain", "constipation", "orthostatic hypotension"],
