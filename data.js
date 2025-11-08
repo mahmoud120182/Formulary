@@ -1565,7 +1565,7 @@ const medicationData = [
         name: "QUITAPEX 100mg Tab.", 
         active: "Quetiapine", 
         category: "Atypical Antipsychotic (Second Generation)",
-        available: true,
+        available: false,
         package: "30 TAB",
         halfLife: "6 hours",
         sideEffects: ["Sedation", "dry mouth", "dizziness", "weight gain", "constipation", "orthostatic hypotension"],
@@ -2558,4 +2558,5 @@ function goBackToSearch() {
     document.getElementById('medication-detail').classList.add('hidden');
     document.querySelector('.search-section').classList.remove('hidden');
     document.querySelector('.results-container').classList.remove('hidden');
+
 }
