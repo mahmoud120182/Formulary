@@ -5885,7 +5885,7 @@ const medicationData = [
     name: "CLOPIXOL DEPOT 200mg/ml Amp.",
     active: "Zuclopenthixol Decanoate",
     category: "Typical Antipsychotic (Depot)",
-    available: true,
+    available: false,
     package: "10 AMP",
     halfLife: "~19 days",
     sideEffects: [
