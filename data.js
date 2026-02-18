@@ -1058,7 +1058,7 @@ const medicationData = [
     name: "WELLINTA SR 150mg Tab.",
     active: "Bupropion",
     category: "NDRI (Antidepressant, Smoking Cessation)",
-    available: true,
+    available: FALSE,
     package: "30 TAB",
     halfLife: "21 hours",
     sideEffects: [
@@ -6355,3 +6355,4 @@ function goBackToSearch() {
   document.querySelector(".search-section").classList.remove("hidden");
   document.querySelector(".results-container").classList.remove("hidden");
 }
+
