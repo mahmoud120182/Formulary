@@ -1363,7 +1363,7 @@ const medicationData = [
     name: "NEURAZINE 100mg Tab.",
     active: "Chlorpromazine",
     category: "Typical Antipsychotic (1st Gen, Phenothiazine)",
-    available: true,
+    available: false,
     package: "20 TAB",
     halfLife: "8-30 hours",
     sideEffects: [
@@ -6355,3 +6355,4 @@ function goBackToSearch() {
   document.querySelector(".search-section").classList.remove("hidden");
   document.querySelector(".results-container").classList.remove("hidden");
 }
+
