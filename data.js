@@ -2529,7 +2529,7 @@ const medicationData = [
     name: "LAMICTAL 25mg Tab.",
     active: "Lamotrigine",
     category: "Anticonvulsant (Mood Stabilizer)",
-    available: true,
+    available: false,
     package: "30 TAB",
     halfLife: "14-18 hours",
     sideEffects: [
@@ -2608,6 +2608,33 @@ const medicationData = [
   },
   {
     name: "CONTROLEPSY 100mg Tab.",
+    active: "Lamotrigine",
+    category: "Anticonvulsant (Mood Stabilizer)",
+    available: false,
+    package: "30 TAB",
+    halfLife: "14-18 hours",
+    sideEffects: [
+      "Dizziness",
+      "headache",
+      "diplopia (double vision)",
+      "ataxia",
+      "nausea",
+      "rash (SJS/TEN risk)",
+    ],
+    interactions: [
+      "Valproate (increases lamotrigine level)",
+      "Carbamazepine/Phenytoin (decrease level)",
+      "Hormonal Contraceptives (may decrease level)",
+    ],
+    monitor: [
+      "Rash (especially early signs of SJS/TEN)",
+      "mood changes",
+      "coordination",
+    ],
+    importantInvestigations: ["None routine; monitor for rash meticulously"],
+  },
+    {
+    name: "CONTROLEPSY 25mg Tab.",
     active: "Lamotrigine",
     category: "Anticonvulsant (Mood Stabilizer)",
     available: false,
@@ -6355,4 +6382,5 @@ function goBackToSearch() {
   document.querySelector(".search-section").classList.remove("hidden");
   document.querySelector(".results-container").classList.remove("hidden");
 }
+
 
