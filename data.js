@@ -1333,7 +1333,7 @@ const medicationData = [
     name: "LIBRAX 30 tablets Tab.",
     active: "Chlordiazepoxide + Clidinium Bromide",
     category: "Benzodiazepine + Anticholinergic (Anxiolytic, GI)",
-    available: false,
+    available: true,
     package: "30 TAB",
     halfLife: "5-30 hours",
     sideEffects: [
@@ -2471,7 +2471,7 @@ const medicationData = [
     name: "HALONACE 5mg Tab.",
     active: "Haloperidol",
     category: "Typical Antipsychotic (1st Gen, Butyrophenone)",
-    available: true,
+    available: false,
     package: "10 TAB",
     halfLife: "18-52 hours",
     sideEffects: [
@@ -2556,7 +2556,7 @@ const medicationData = [
     name: "LAMICTAL 50mg Tab.",
     active: "Lamotrigine",
     category: "Anticonvulsant (Mood Stabilizer)",
-    available: true,
+    available: false,
     package: "30 TAB",
     halfLife: "14-18 hours",
     sideEffects: [
@@ -2606,11 +2606,38 @@ const medicationData = [
     ],
     importantInvestigations: ["None routine; monitor for rash meticulously"],
   },
+    {
+    name: "LAMOTRINE 50mg Tab.",
+    active: "Lamotrigine",
+    category: "Anticonvulsant (Mood Stabilizer)",
+    available: true,
+    package: "30 TAB",
+    halfLife: "14-18 hours",
+    sideEffects: [
+      "Dizziness",
+      "headache",
+      "diplopia (double vision)",
+      "ataxia",
+      "nausea",
+      "rash (SJS/TEN risk)",
+    ],
+    interactions: [
+      "Valproate (increases lamotrigine level)",
+      "Carbamazepine/Phenytoin (decrease level)",
+      "Hormonal Contraceptives (may decrease level)",
+    ],
+    monitor: [
+      "Rash (especially early signs of SJS/TEN)",
+      "mood changes",
+      "coordination",
+    ],
+    importantInvestigations: ["None routine; monitor for rash meticulously"],
+  },
   {
     name: "CONTROLEPSY 100mg Tab.",
     active: "Lamotrigine",
     category: "Anticonvulsant (Mood Stabilizer)",
-    available: false,
+    available: true,
     package: "30 TAB",
     halfLife: "14-18 hours",
     sideEffects: [
@@ -2637,7 +2664,7 @@ const medicationData = [
     name: "CONTROLEPSY 25mg Tab.",
     active: "Lamotrigine",
     category: "Anticonvulsant (Mood Stabilizer)",
-    available: false,
+    available: true,
     package: "30 TAB",
     halfLife: "14-18 hours",
     sideEffects: [
