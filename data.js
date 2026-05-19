@@ -154,7 +154,7 @@ const medicationData = [
     importantInvestigations: ["None routine; caution in hepatic impairment"],
   },
   {
-    name: "XANAX 0.5mg Tab.",
+    name: "XANAX 0.25mg Tab.",
     active: "Alprazolam",
     category: "Benzodiazepine (Anxiolytic)",
     available: false,
@@ -607,7 +607,7 @@ const medicationData = [
     name: "APILIPEX 30mg Tab.",
     active: "Aripiprazole",
     category: "Atypical Antipsychotic (3rd Gen)",
-    available: true,
+    available: false,
     package: "30 TAB",
     halfLife: "75 hours",
     sideEffects: [
@@ -641,6 +641,38 @@ const medicationData = [
     category: "Atypical Antipsychotic (3rd Gen)",
     available: true,
     package: "30 TAB",
+    halfLife: "75 hours",
+    sideEffects: [
+      "Akathisia",
+      "headache",
+      "insomnia",
+      "weight gain (less than others)",
+      "nausea",
+      "restlessness",
+    ],
+    interactions: [
+      "CYP3A4 inducers/inhibitors (e.g., Carbamazepine/Ketoconazole)",
+      "CYP2D6 inhibitors (e.g., Fluoxetine)",
+    ],
+    monitor: [
+      "Extrapyramidal symptoms (EPS)",
+      "akathisia",
+      "restlessness",
+      "activation of psychosis",
+      "sedation",
+      "weight gain",
+    ],
+    importantInvestigations: [
+      "Fasting Blood Glucose",
+      "Lipids (baseline and periodic)",
+    ],
+  },
+  {
+    name: "ARIPIPREX 30mg Tab.",
+    active: "Aripiprazole",
+    category: "Atypical Antipsychotic (3rd Gen)",
+    available: true,
+    package: "20 TAB",
     halfLife: "75 hours",
     sideEffects: [
       "Akathisia",
@@ -973,7 +1005,7 @@ const medicationData = [
     name: "ACHTENON 2mg Tab.",
     active: "Biperidene",
     category: "Anticholinergic (Anti-Parkinson's)",
-    available: true,
+    available: false,
     package: "30 TAB",
     halfLife: "~20 hours",
     sideEffects: [
@@ -1173,6 +1205,74 @@ const medicationData = [
       "suicidal ideation",
     ],
     importantInvestigations: ["None routine for mental health use"],
+  },
+  {
+    name: "DOSTINEX 0.5MG Tab.",
+    active: "Cabergoline",
+    category: "Dopamine Receptor Agonist (Ergot Derivative)",
+    available: false,
+    package: "2 TAB",
+    halfLife: "63–69 hours",
+    sideEffects: [
+      "Nausea and vomiting",
+      "headache",
+      "dizziness",
+      "orthostatic hypotension",
+      "somnolence",
+      "impulse control disorders (e.g., pathological gambling, hypersexuality, compulsive buying)",
+      "exacerbation of psychosis or mania",
+    ],
+    interactions: [
+      "Dopamine antagonists (e.g., typical/atypical antipsychotics, metoclopramide - mutually antagonize therapeutic effects)",
+      "Macrolide antibiotics (e.g., erythromycin - increases cabergoline plasma levels)",
+      "Other ergot alkaloids",
+      "Blood pressure lowering medications (additive risk of orthostatic hypotension)",
+    ],
+    monitor: [
+      "Serum prolactin levels",
+      "blood pressure (for orthostatic hypotension)",
+      "behavioral changes, mood changes, or emergence of compulsive urges",
+      "worsening or emergence of psychotic symptoms (hallucinations, delusions)",
+      "cardiac valvulopathy (via echocardiogram)",
+      "signs of systemic fibrosis (pulmonary, pericardial, retroperitoneal)",
+    ],
+    importantInvestigations: [
+      "Used in psychiatry off-label to reverse antipsychotic-induced hyperprolactinemia and SSRI-induced sexual dysfunction. Requires baseline and annual echocardiogram for long-term therapy to rule out valvular fibrosis. Baseline chest X-ray, serum creatinine, and ESR to screen for fibrotic disorders. Regular clinical psychiatric screening for impulse control disorders and manic/psychotic exacerbations is mandatory.",
+    ],
+  },
+  {
+    name: "ELONDA 0.5MG Tab.",
+    active: "Cabergoline",
+    category: "Dopamine Receptor Agonist (Ergot Derivative)",
+    available: true,
+    package: "2 TAB",
+    halfLife: "63–69 hours",
+    sideEffects: [
+      "Nausea and vomiting",
+      "headache",
+      "dizziness",
+      "orthostatic hypotension",
+      "somnolence",
+      "impulse control disorders (e.g., pathological gambling, hypersexuality, compulsive buying)",
+      "exacerbation of psychosis or mania",
+    ],
+    interactions: [
+      "Dopamine antagonists (e.g., typical/atypical antipsychotics, metoclopramide - mutually antagonize therapeutic effects)",
+      "Macrolide antibiotics (e.g., erythromycin - increases cabergoline plasma levels)",
+      "Other ergot alkaloids",
+      "Blood pressure lowering medications (additive risk of orthostatic hypotension)",
+    ],
+    monitor: [
+      "Serum prolactin levels",
+      "blood pressure (for orthostatic hypotension)",
+      "behavioral changes, mood changes, or emergence of compulsive urges",
+      "worsening or emergence of psychotic symptoms (hallucinations, delusions)",
+      "cardiac valvulopathy (via echocardiogram)",
+      "signs of systemic fibrosis (pulmonary, pericardial, retroperitoneal)",
+    ],
+    importantInvestigations: [
+      "Used in psychiatry off-label to reverse antipsychotic-induced hyperprolactinemia and SSRI-induced sexual dysfunction. Requires baseline and annual echocardiogram for long-term therapy to rule out valvular fibrosis. Baseline chest X-ray, serum creatinine, and ESR to screen for fibrotic disorders. Regular clinical psychiatric screening for impulse control disorders and manic/psychotic exacerbations is mandatory.",
+    ],
   },
   {
     name: "SINEMET 25/250mg Tab.",
@@ -1821,6 +1921,64 @@ const medicationData = [
     importantInvestigations: ["Blood pressure (baseline and periodic)"],
   },
   {
+    name: "PRISMAVEN 50MG Tab",
+    active: "Desvenlafaxine",
+    category: "SNRI (Antidepressant)",
+    available: false,
+    package: "30 TAB",
+    halfLife: "11 hours",
+    sideEffects: [
+      "Nausea",
+      "headache",
+      "dry mouth",
+      "insomnia",
+      "hyperhidrosis (sweating)",
+      "constipation",
+    ],
+    interactions: [
+      "MAOIs",
+      "Serotonergic drugs (risk of serotonin syndrome)",
+      "NSAIDs/Aspirin (bleeding risk)",
+    ],
+    monitor: [
+      "Blood pressure",
+      "mood changes",
+      "suicidal ideation",
+      "serotonin syndrome",
+      "withdrawal symptoms",
+    ],
+    importantInvestigations: ["Blood pressure (baseline and periodic)"],
+  },
+  {
+    name: "PRISMAVEN 100MG Tab",
+    active: "Desvenlafaxine",
+    category: "SNRI (Antidepressant)",
+    available: false,
+    package: "30 TAB",
+    halfLife: "11 hours",
+    sideEffects: [
+      "Nausea",
+      "headache",
+      "dry mouth",
+      "insomnia",
+      "hyperhidrosis (sweating)",
+      "constipation",
+    ],
+    interactions: [
+      "MAOIs",
+      "Serotonergic drugs (risk of serotonin syndrome)",
+      "NSAIDs/Aspirin (bleeding risk)",
+    ],
+    monitor: [
+      "Blood pressure",
+      "mood changes",
+      "suicidal ideation",
+      "serotonin syndrome",
+      "withdrawal symptoms",
+    ],
+    importantInvestigations: ["Blood pressure (baseline and periodic)"],
+  },
+  {
     name: "DIVAKOTE 500mg ER Tab.",
     active: "Divalproex",
     category: "Anticonvulsant (Mood Stabilizer)",
@@ -2074,7 +2232,7 @@ const medicationData = [
     name: "CIPRALEX 10mg Tab.",
     active: "Escitalopram",
     category: "SSRI (Antidepressant)",
-    available: true,
+    available: false,
     package: "28 TAB",
     halfLife: "27-32 hours",
     sideEffects: [
@@ -2260,7 +2418,7 @@ const medicationData = [
     name: "FLUANXOL DEPOT 40mg/2ml Amp.",
     active: "Flupentixol",
     category: "Typical Antipsychotic (1st Gen, Thioxanthene)",
-    available: true,
+    available: false,
     package: "10 AMP",
     halfLife: "~19 days",
     sideEffects: [
@@ -2583,7 +2741,7 @@ const medicationData = [
     name: "LAMOTRINE 100mg Tab.",
     active: "Lamotrigine",
     category: "Anticonvulsant (Mood Stabilizer)",
-    available: true,
+    available: false,
     package: "30 TAB",
     halfLife: "14-18 hours",
     sideEffects: [
@@ -2606,11 +2764,38 @@ const medicationData = [
     ],
     importantInvestigations: ["None routine; monitor for rash meticulously"],
   },
-    {
+  {
     name: "LAMOTRINE 50mg Tab.",
     active: "Lamotrigine",
     category: "Anticonvulsant (Mood Stabilizer)",
-    available: true,
+    available: false,
+    package: "30 TAB",
+    halfLife: "14-18 hours",
+    sideEffects: [
+      "Dizziness",
+      "headache",
+      "diplopia (double vision)",
+      "ataxia",
+      "nausea",
+      "rash (SJS/TEN risk)",
+    ],
+    interactions: [
+      "Valproate (increases lamotrigine level)",
+      "Carbamazepine/Phenytoin (decrease level)",
+      "Hormonal Contraceptives (may decrease level)",
+    ],
+    monitor: [
+      "Rash (especially early signs of SJS/TEN)",
+      "mood changes",
+      "coordination",
+    ],
+    importantInvestigations: ["None routine; monitor for rash meticulously"],
+  },
+  {
+    name: "LAMOTRINE 25mg Tab.",
+    active: "Lamotrigine",
+    category: "Anticonvulsant (Mood Stabilizer)",
+    available: false,
     package: "30 TAB",
     halfLife: "14-18 hours",
     sideEffects: [
@@ -2660,7 +2845,7 @@ const medicationData = [
     ],
     importantInvestigations: ["None routine; monitor for rash meticulously"],
   },
-    {
+  {
     name: "CONTROLEPSY 25mg Tab.",
     active: "Lamotrigine",
     category: "Anticonvulsant (Mood Stabilizer)",
@@ -2691,7 +2876,7 @@ const medicationData = [
     name: "PRIANIL 400mg Tab.",
     active: "Lithium",
     category: "Mood Stabilizer",
-    available: false,
+    available: true,
     package: "30 TAB",
     halfLife: "24-36 hours",
     sideEffects: [
@@ -2731,7 +2916,7 @@ const medicationData = [
     name: "LITHIOMOD 400MG Tab",
     active: "Lithium",
     category: "Mood Stabilizer",
-    available: true,
+    available: false,
     package: "30 TAB",
     halfLife: "24-36 hours",
     sideEffects: [
@@ -3081,7 +3266,7 @@ const medicationData = [
     name: "REMERON 30mg Tab.",
     active: "Mirtazapine",
     category: "NaSSA (Atypical Antidepressant)",
-    available: true,
+    available: false,
     package: "10 TAB",
     halfLife: "20-40 hours",
     sideEffects: [
@@ -3530,7 +3715,7 @@ const medicationData = [
     name: "TREVICTA 525mg Syring",
     active: "Paliperidone",
     category: "Atypical Antipsychotic (Second Generation)",
-    available: false,
+    available: true,
     package: "1 SYRING",
     halfLife: "~3-6 months",
     sideEffects: [
@@ -3620,7 +3805,7 @@ const medicationData = [
     name: "PAROXETINE 12.5mg CR Tab.",
     active: "Paroxetine",
     category: "SSRI (Antidepressant)",
-    available: false,
+    available: true,
     package: "30 TAB",
     halfLife: "21 hours",
     sideEffects: [
@@ -3716,7 +3901,7 @@ const medicationData = [
     name: "SEROXAT CR 12.5mg Tab.",
     active: "Paroxetine",
     category: "SSRI (Antidepressant)",
-    available: true,
+    available: false,
     package: "30 TAB",
     halfLife: "21 hours",
     sideEffects: [
@@ -3748,7 +3933,7 @@ const medicationData = [
     name: "SEROXAT CR 25mg Tab.",
     active: "Paroxetine",
     category: "SSRI (Antidepressant)",
-    available: true,
+    available: false,
     package: "30 TAB",
     halfLife: "21 hours",
     sideEffects: [
@@ -4482,7 +4667,7 @@ const medicationData = [
     name: "QUETIAZIC 300 XR Tab.",
     active: "Quetiapine",
     category: "Atypical Antipsychotic (Second Generation)",
-    available: true,
+    available: false,
     package: "30 TAB",
     halfLife: "6 hours",
     sideEffects: [
@@ -4513,7 +4698,7 @@ const medicationData = [
     name: "QUITCOOL 300 XR Tab.",
     active: "Quetiapine",
     category: "Atypical Antipsychotic (Second Generation)",
-    available: false,
+    available: true,
     package: "30 TAB",
     halfLife: "6 hours",
     sideEffects: [
@@ -6061,6 +6246,12 @@ const dosingData = {
     notes:
       "Depression, Smoking Cessation. Avoid high doses due to seizure risk.",
   },
+  Cabergoline: {
+    dosing:
+      "Hyperprolactinemia: Starting dose of 0.25 mg two times per week. Increase by 0.25 mg twice weekly every 4 weeks based on serum prolactin levels (max 1 mg two times per week).",
+    notes:
+      "Take with food to minimize nausea. Requires close monitoring for cardiac valvulopathy and impulse control disorders during long-term therapy.",
+  },
   "Carbidopa/Levodopa": {
     dosing:
       "1 tablet three times per day or four times per day. Start with 25/100 mg.",
@@ -6409,5 +6600,3 @@ function goBackToSearch() {
   document.querySelector(".search-section").classList.remove("hidden");
   document.querySelector(".results-container").classList.remove("hidden");
 }
-
-
