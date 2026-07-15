@@ -322,7 +322,7 @@ const medicationData = [
     name: "SOLIAN 400mg Tab.",
     active: "Amisulpride",
     category: "Atypical Antipsychotic (2nd Gen)",
-    available: true,
+    available: false,
     package: "30 TAB",
     halfLife: "12 hours",
     sideEffects: [
@@ -1120,7 +1120,7 @@ const medicationData = [
     name: "VIXADEP SR 150mg Tab.",
     active: "Bupropion",
     category: "NDRI (Antidepressant, Smoking Cessation)",
-    available: true,
+    available: false,
     package: "30 TAB",
     halfLife: "21 hours",
     sideEffects: [
@@ -1150,7 +1150,7 @@ const medicationData = [
     name: "BUPROFUTAL SR 150mg Tab.",
     active: "Bupropion",
     category: "NDRI (Antidepressant, Smoking Cessation)",
-    available: false,
+    available: true,
     package: "30 TAB",
     halfLife: "21 hours",
     sideEffects: [
@@ -1520,7 +1520,7 @@ const medicationData = [
     name: "DEPRAM 40mg Tab.",
     active: "Citalopram",
     category: "SSRI (Antidepressant)",
-    available: true,
+    available: false,
     package: "10 TAB",
     halfLife: "33 hours",
     sideEffects: [
@@ -1550,7 +1550,7 @@ const medicationData = [
     name: "ANAFRANIL 25mg Tab.",
     active: "Clomipramine",
     category: "Tricyclic Antidepressant (TCA)",
-    available: true,
+    available: false,
     package: "30 TAB",
     halfLife: "30-60 hours",
     sideEffects: [
@@ -1584,7 +1584,7 @@ const medicationData = [
     name: "ANAFRANIL SR 75mg Tab.",
     active: "Clomipramine",
     category: "Tricyclic Antidepressant (TCA)",
-    available: true,
+    available: false,
     package: "20 TAB",
     halfLife: "30-60 hours",
     sideEffects: [
@@ -1614,6 +1614,109 @@ const medicationData = [
       "baseline in cardiac disease",
     ],
   },
+  {
+    name: "ANAPRAMINE SR 75mg Tab.",
+    active: "Clomipramine",
+    category: "Tricyclic Antidepressant (TCA)",
+    available: false,
+    package: "20 TAB",
+    halfLife: "30-60 hours",
+    sideEffects: [
+      "Sedation",
+      "dry mouth",
+      "constipation",
+      "blurred vision",
+      "orthostatic hypotension",
+      "weight gain",
+    ],
+    interactions: [
+      "MAOIs",
+      "SSRIs",
+      "Anticholinergics",
+      "CNS depressants",
+      "Drugs that prolong QTc",
+    ],
+    monitor: [
+      "Sedation",
+      "anticholinergic effects",
+      "mood changes",
+      "suicidal ideation",
+      "seizure threshold",
+    ],
+    importantInvestigations: [
+      "ECG (QTc interval at higher doses)",
+      "baseline in cardiac disease",
+    ],
+  },
+  {
+    name: "ANAPRAMINE 25mg Tab.",
+    active: "Clomipramine",
+    category: "Tricyclic Antidepressant (TCA)",
+    available: false,
+    package: "30 TAB",
+    halfLife: "30-60 hours",
+    sideEffects: [
+      "Sedation",
+      "dry mouth",
+      "constipation",
+      "blurred vision",
+      "orthostatic hypotension",
+      "weight gain",
+    ],
+    interactions: [
+      "MAOIs",
+      "SSRIs",
+      "Anticholinergics",
+      "CNS depressants",
+      "Drugs that prolong QTc",
+    ],
+    monitor: [
+      "Sedation",
+      "anticholinergic effects",
+      "mood changes",
+      "suicidal ideation",
+      "seizure threshold",
+    ],
+    importantInvestigations: [
+      "ECG (QTc interval at higher doses)",
+      "baseline in cardiac disease",
+    ],
+  },
+  {
+    name: "ANAPRAMINE 50mg Tab.",
+    active: "Clomipramine",
+    category: "Tricyclic Antidepressant (TCA)",
+    available: false,
+    package: "30 TAB",
+    halfLife: "30-60 hours",
+    sideEffects: [
+      "Sedation",
+      "dry mouth",
+      "constipation",
+      "blurred vision",
+      "orthostatic hypotension",
+      "weight gain",
+    ],
+    interactions: [
+      "MAOIs",
+      "SSRIs",
+      "Anticholinergics",
+      "CNS depressants",
+      "Drugs that prolong QTc",
+    ],
+    monitor: [
+      "Sedation",
+      "anticholinergic effects",
+      "mood changes",
+      "suicidal ideation",
+      "seizure threshold",
+    ],
+    importantInvestigations: [
+      "ECG (QTc interval at higher doses)",
+      "baseline in cardiac disease",
+    ],
+  },
+
   {
     name: "APETRYL 0.5mg Tab.",
     active: "Clonazepam",
@@ -1693,7 +1796,7 @@ const medicationData = [
     name: "AMOTRIL 2mg Tab.",
     active: "Clonazepam",
     category: "Benzodiazepine (Anticonvulsant, Anxiolytic)",
-    available: true,
+    available: false,
     package: "30 TAB",
     halfLife: "18-50 hours",
     sideEffects: [
@@ -1982,7 +2085,7 @@ const medicationData = [
     name: "DIVAKOTE 500mg ER Tab.",
     active: "Divalproex",
     category: "Anticonvulsant (Mood Stabilizer)",
-    available: false,
+    available: true,
     package: "20 tab",
     halfLife: "9-16 hours",
     sideEffects: [
@@ -2356,7 +2459,7 @@ const medicationData = [
     name: "OCTOZAC 20mg Cap.",
     active: "Fluoxetine",
     category: "SSRI (Antidepressant)",
-    available: true,
+    available: false,
     package: "14 cap",
     halfLife: "1-3 days",
     sideEffects: [
@@ -2387,7 +2490,7 @@ const medicationData = [
     name: "DEPREBAN 20mg Cap.",
     active: "Fluoxetine",
     category: "SSRI (Antidepressant)",
-    available: false,
+    available: true,
     package: "10 cap",
     halfLife: "1-3 days",
     sideEffects: [
@@ -2660,7 +2763,7 @@ const medicationData = [
     name: "LAMICTAL 100mg Tab.",
     active: "Lamotrigine",
     category: "Anticonvulsant (Mood Stabilizer)",
-    available: false,
+    available: true,
     package: "30 TAB",
     halfLife: "14-18 hours",
     sideEffects: [
@@ -2714,7 +2817,7 @@ const medicationData = [
     name: "LAMICTAL 50mg Tab.",
     active: "Lamotrigine",
     category: "Anticonvulsant (Mood Stabilizer)",
-    available: false,
+    available: true,
     package: "30 TAB",
     halfLife: "14-18 hours",
     sideEffects: [
@@ -2822,7 +2925,7 @@ const medicationData = [
     name: "CONTROLEPSY 100mg Tab.",
     active: "Lamotrigine",
     category: "Anticonvulsant (Mood Stabilizer)",
-    available: true,
+    available: false,
     package: "30 TAB",
     halfLife: "14-18 hours",
     sideEffects: [
@@ -3933,7 +4036,7 @@ const medicationData = [
     name: "SEROXAT CR 25mg Tab.",
     active: "Paroxetine",
     category: "SSRI (Antidepressant)",
-    available: false,
+    available: true,
     package: "30 TAB",
     halfLife: "21 hours",
     sideEffects: [
@@ -4029,7 +4132,7 @@ const medicationData = [
     name: "PHENYTIN 100mg Cap.",
     active: "Phenytoin",
     category: "Hydantoin (Anticonvulsant)",
-    available: true,
+    available: false,
     package: "50 CAP",
     halfLife: "6-24 hours",
     sideEffects: [
@@ -4061,7 +4164,7 @@ const medicationData = [
     name: "PHENYTIN 50mg Cap.",
     active: "Phenytoin",
     category: "Hydantoin (Anticonvulsant)",
-    available: true,
+    available: false,
     package: "50 CAP",
     halfLife: "6-24 hours",
     sideEffects: [
@@ -4602,7 +4705,7 @@ const medicationData = [
     ],
   },
   {
-    name: "QUITCOOL 150 XR Tab.",
+    name: "QUETIAZIC 150 XR Tab.",
     active: "Quetiapine",
     category: "Atypical Antipsychotic (Second Generation)",
     available: true,
@@ -4818,37 +4921,7 @@ const medicationData = [
       "Do not crush or chew. Monitor weight, blood glucose, lipids. Higher QTc risk than IR.",
     ],
   },
-  {
-    name: "QUETIAPINE 100mg Tab.",
-    active: "Quetiapine",
-    category: "Atypical Antipsychotic (Second Generation)",
-    available: true,
-    package: "30 TAB",
-    halfLife: "6 hours",
-    sideEffects: [
-      "Sedation",
-      "dry mouth",
-      "dizziness",
-      "weight gain",
-      "constipation",
-      "orthostatic hypotension",
-    ],
-    interactions: [
-      "CNS depressants",
-      "CYP3A4 inhibitors/inducers (e.g., ketoconazole, carbamazepine)",
-      "antihypertensives",
-    ],
-    monitor: [
-      "Sedation",
-      "orthostatic hypotension",
-      "weight gain",
-      "metabolic changes",
-      "cataracts (long-term)",
-    ],
-    importantInvestigations: [
-      "Monitor weight, blood glucose, lipids, and blood pressure. Risk of cataract (monitor eye exams).",
-    ],
-  },
+ 
   {
     name: "SEROQUEL 100mg Tab.",
     active: "Quetiapine",
@@ -4884,7 +4957,7 @@ const medicationData = [
     name: "SEROQUEL 200mg Tab.",
     active: "Quetiapine",
     category: "Atypical Antipsychotic (Second Generation)",
-    available: true,
+    available: false,
     package: "30 TAB",
     halfLife: "6 hours",
     sideEffects: [
@@ -5594,7 +5667,7 @@ const medicationData = [
     name: "STELLASIL 1mg Tab.",
     active: "Trifluperazine",
     category: "Typical Antipsychotic (First Generation, Phenothiazine)",
-    available: false,
+    available: true,
     package: "30 TAB",
     halfLife: "8 hours",
     sideEffects: [
@@ -5853,7 +5926,7 @@ const medicationData = [
     ],
   },
   {
-    name: "HYPNOR 7.5mg Tab.",
+    name: "HYPNOR 7.5mg Tab",
     active: "Zopiclone",
     category: "Non-Benzodiazepine (Z-Drug)",
     available: false,
