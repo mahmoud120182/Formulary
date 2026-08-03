@@ -2639,7 +2639,7 @@ const medicationData = [
     name: "HALOPERIDOL RETARD 50mg Amp.",
     active: "Haloperidol",
     category: "Typical Antipsychotic (1st Gen, Butyrophenone)",
-    available: false,
+    available: true,
     package: "1 AMP",
     halfLife: "3 weeks",
     sideEffects: [
