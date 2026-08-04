@@ -2639,7 +2639,7 @@ const medicationData = [
     name: "HALOPERIDOL RETARD 50mg Amp.",
     active: "Haloperidol",
     category: "Typical Antipsychotic (1st Gen, Butyrophenone)",
-    available: true,
+    available: false,
     package: "1 AMP",
     halfLife: "3 weeks",
     sideEffects: [
@@ -6190,6 +6190,36 @@ const medicationData = [
       "Sodium Level (for hyponatremia)",
       "Carbamazepine Trough Level (therapeutic range 4-12 mcg/mL)",
       "Pregnancy Test (teratogenic)",
+    ],
+  },
+    {
+    name: "ZUCLOPENTHIXOL DEPOT 200mg/ml Amp.",
+    active: "Zuclopenthixol Decanoate",
+    category: "Typical Antipsychotic (Depot)",
+    available: false,
+    package: "5 AMP",
+    halfLife: "~19 days",
+    sideEffects: [
+      "Extrapyramidal symptoms",
+      "sedation",
+      "weight gain",
+      "hyperprolactinemia",
+      "anticholinergic effects",
+    ],
+    interactions: [
+      "CNS depressants",
+      "levodopa (antagonizes effect)",
+      "guanethidine",
+    ],
+    monitor: [
+      "EPS",
+      "sedation",
+      "akathisia",
+      "injection site reactions",
+      "clinical stability",
+    ],
+    importantInvestigations: [
+      "Deep IM injection. Long-acting formulation. Monitor for EPS and akathisia.",
     ],
   },
 
