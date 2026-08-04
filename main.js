@@ -10,6 +10,8 @@ window.onload = function() {
     if (window.history.state === null) {
         window.history.replaceState({}, document.title);
     }
+
+    notifyClopixolAvailable();  // This calls the function from popup.js
 };
 
 // Function to load medication data
