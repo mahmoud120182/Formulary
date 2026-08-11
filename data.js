@@ -2639,7 +2639,7 @@ const medicationData = [
     name: "HALOPERIDOL RETARD 50mg Amp.",
     active: "Haloperidol",
     category: "Typical Antipsychotic (1st Gen, Butyrophenone)",
-    available: false,
+    available: true,
     package: "1 AMP",
     halfLife: "3 weeks",
     sideEffects: [
@@ -6196,7 +6196,7 @@ const medicationData = [
     name: "ZUCLOPENTHIXOL DEPOT 200mg/ml Amp.",
     active: "Zuclopenthixol Decanoate",
     category: "Typical Antipsychotic (Depot)",
-    available: false,
+    available: true,
     package: "5 AMP",
     halfLife: "~19 days",
     sideEffects: [
