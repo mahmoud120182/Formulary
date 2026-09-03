@@ -2701,7 +2701,7 @@ const medicationData = [
     name: "HALONACE 1.5mg Tab.",
     active: "Haloperidol",
     category: "Typical Antipsychotic (1st Gen, Butyrophenone)",
-    available: true,
+    available: false,
     package: "10 TAB",
     halfLife: "18-52 hours",
     sideEffects: [
